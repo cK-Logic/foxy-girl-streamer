@@ -12,6 +12,32 @@
     row-gap: 3rem;
   }
 
+  @media (max-width: 1450px) {
+    #orderform {
+      font-size: 80%;
+    }
+
+    .formleftside {
+      text-align: center;
+    }
+
+    #orderform h1 {
+      font-size: 150%;
+      margin-left: 4rem;
+    }
+
+    #orderform .buttoncontainer,
+    .herinfo {
+      width: 100%;
+      
+    }
+
+    #orderform .buttoncontainer button {
+      width: 7rem;
+      font-size: 90%;
+    }
+  }
+
   section {
     height: auto;
   }
@@ -21,6 +47,44 @@
     row-gap: 2rem;
   }
 }
+
+
+@media (max-width: 1050px) {
+  #orderform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    overflow-y: auto;
+  }
+
+  #orderform .herinfo {
+    margin-top: 3rem;
+  }
+
+  .formleftside {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .herinfo,
+  .buttoncontainer,
+  #orderform h1 {
+    margin-left: 0;
+  }
+
+  .formrightside {
+    height: auto;
+  }
+
+  #orderform button {
+    width: 100% !important;
+  }
+
+} 
+
+
 
 @media (max-width: 900px) {
   section {
@@ -76,5 +140,9 @@
     grid-template-columns: repeat(2, auto);
     row-gap: 1rem;
     margin-bottom: 2rem;
+  }
+
+  #tobig a{
+    font-size: 80%;
   }
 }
