@@ -1,0 +1,80 @@
+
+
+@media (max-width: 1500px) {
+  section h1 {
+    font-size: 120%;
+  }
+
+  .maincontext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  section {
+    height: auto;
+  }
+
+  .buttoncontainer {
+    margin-top: 3rem;
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    font-size: 90%;
+  }
+
+  .rightside button {
+    width: 15rem;
+  }
+
+  .buttoncontainer {
+    display: grid;
+    place-items: center;
+  }
+
+  html {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttoncontainer button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .rightside h2 {
+    font-size: 130%;
+  }
+
+  .rightside {
+    width: 100%;
+  }
+
+  .imghere {
+    width: 50%;
+  }
+
+  .imghere img {
+    width: auto;
+  }
+
+  .linkscontainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}

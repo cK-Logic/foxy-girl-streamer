@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: var(--text);
+}
+
+body {
+  padding: 0;
+}
+
+.formleftside {
+  display: flex;
+  flex-direction: column;
+}
+
+#orderform {
+  box-shadow: 0 0 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+  text-align: center;
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 7rem;
+}
+
+#orderform h1 {
+  font-size: 36px;
+  margin-top: 3rem;
+  color: white;
+  letter-spacing: .4rem;
+}
+
+.buttoncontainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  place-items: center;
+  gap: 5rem;
+  row-gap: 3rem;
+  margin: 3rem 0 0 2rem;
+  box-shadow:  0 0 25px;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.formleftside button {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  box-shadow: inset 0 0 15px;
+  background: transparent;
+  border: 1px solid black;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  transition: all .5s ease;
+  animation:slide-in-blurred-right 1s cubic-bezier(.23,1.000,.32,1.000) both
+}
+
+.formleftside button a{
+  width: 100%;
+}
+
+
+button:hover {
+  scale: 1.1;
+}
+
+button i {
+  color: var(--text);
+}
+
+.herinfo {
+  width: 50rem;
+  color: var(--text);
+  margin-top: 10rem;
+  box-shadow:  0 0 15px black;
+  border-radius: 20px;
+  margin-left: 2rem;
+  padding: 1rem;
+  font-size: 120%;
+
+}
+
+.herinfo p:first-child {
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+
+.formrightside {
+  width: 100%;
+  height: 95vh;
+  box-shadow: 0 0 35px black;
+  border-radius: 20px;
+  padding: 3rem;
+  color: var(--text);
+  font-size: 100%;
+  letter-spacing: .2rem;
+  text-align: start;
+}
+
+.formrightside p {
+  align-self: flex-start;
+}
+
+.formrightside span {
+  color: lime;
+  text-shadow: 0 0 20px lime;
+}

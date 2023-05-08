@@ -21,3 +21,14 @@ body {
 }
 
 
+section {
+  background: transparent;
+  backdrop-filter: blur(15px);
+  height: 80vh;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgb(0, 0, 0), 
+  inset 0 0 30px rgb(50, 50, 50);
+  padding: 2rem 2rem 5rem;
+  overflow: hidden;
+}
