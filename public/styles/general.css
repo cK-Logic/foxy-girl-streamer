@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+  text-decoration: none;
+  /* border: 1px solid white; */
+}
+
+:root {
+  --text: gray;
+  --bg: #303030;
+  --bg-lines: #831652;
+}
+
+body {
+  background: var(--bg);
+  padding: 5% 10%;
+}
+
+
