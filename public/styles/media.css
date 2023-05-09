@@ -17,6 +17,20 @@
       font-size: 80%;
     }
 
+    .tosleftside {
+      width: 100% !important;
+    }
+
+    #idbutton {
+      width: 100%;
+    }
+
+    #tossection {
+      flex-direction: column;
+      align-items: center;
+      overflow: auto;
+    }
+
     .formleftside {
       text-align: center;
     }
@@ -32,7 +46,8 @@
       
     }
 
-    #orderform .buttoncontainer button {
+    #orderform .buttoncontainer button,
+    #tossection .buttoncontainer button {
       width: 7rem;
       font-size: 90%;
     }
@@ -46,6 +61,13 @@
     margin-top: 3rem;
     row-gap: 2rem;
   }
+}
+
+@media (max-width: 1250px) {
+  .buttoncontainer button {
+    width: 100% !important;
+  }
+
 }
 
 
@@ -78,7 +100,12 @@
     height: auto;
   }
 
-  #orderform button {
+  #orderform button,
+  #tossection butto {
+    width: 100% !important;
+  }
+
+  .tosleftside {
     width: 100% !important;
   }
 
@@ -113,8 +140,14 @@
     width: 100%;
   }
 
-  .buttoncontainer button {
+  #idbutton {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+  }
+
+  .buttoncontainer button {
+    width: 100% !important;
   }
 }
 
