@@ -34,6 +34,7 @@ body {
   margin-top: 3rem;
   color: white;
   letter-spacing: .4rem;
+  text-shadow: 0 0 10px white;
 }
 
 .buttoncontainer {

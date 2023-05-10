@@ -61,6 +61,10 @@
     margin-top: 3rem;
     row-gap: 2rem;
   }
+
+  .buttoncontainer button {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -109,6 +113,10 @@
     width: 100% !important;
   }
 
+  .tosrightside {
+    height: auto !important;
+  }
+
 } 
 
 
@@ -127,9 +135,6 @@
     place-items: center;
   }
 
-  html {
-    text-align: center;
-  }
 }
 
 
@@ -138,6 +143,18 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .tosleftside {
+    margin-bottom: 9rem;
+  }
+
+  .tosrightside {
+    height: auto !important;
+  }
+
+  #tossection {
+    height: auto;
   }
 
   #idbutton {
@@ -154,6 +171,11 @@
 @media (max-width: 650px) {
   .rightside h2 {
     font-size: 130%;
+  }
+  
+  #tossection {
+    display: flex;
+    row-gap: 10rem !important;
   }
 
   .rightside {
@@ -177,5 +199,19 @@
 
   #tobig a{
     font-size: 80%;
+  }
+}
+
+@media (max-width: 465px) {
+  #tossection {
+    display: flex;
+    row-gap: 17rem !important;
+  }
+}
+
+@media (max-width: 385px) {
+  #tossection {
+    display: flex;
+    row-gap: 30rem !important;
   }
 }
