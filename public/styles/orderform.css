@@ -39,7 +39,7 @@ body {
 
 .buttoncontainer {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
   gap: 5rem;
   row-gap: 3rem;
@@ -92,7 +92,7 @@ button i {
 
 .herinfo p:first-child {
   color: red;
-  text-shadow: 0 0 10px red;
+  text-shadow: 0 0 15px red;
 }
 
 

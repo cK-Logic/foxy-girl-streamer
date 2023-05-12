@@ -33,6 +33,11 @@
 
     .formleftside {
       text-align: center;
+      width: 50%;
+    }
+
+    .formrightside {
+      width: 50% !important;
     }
 
     #orderform h1 {
@@ -43,12 +48,14 @@
     #orderform .buttoncontainer,
     .herinfo {
       width: 100%;
-      
     }
 
-    #orderform .buttoncontainer button,
+    #ORDERFORM .buttoncontainer button {
+      width: 100%;
+    }
+
     #tossection .buttoncontainer button {
-      width: 7rem;
+      width: 20rem !important;
       font-size: 90%;
     }
   }
@@ -67,9 +74,13 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1280px) {
   .buttoncontainer button {
-    width: 100% !important;
+    font-size: 100%;
+  }
+
+  .tosrightside {
+    height: auto !important;
   }
 
 }
@@ -92,6 +103,7 @@
     display: flex;
     box-sizing: border-box;
     align-items: center;
+    width: 100%;
   }
 
   .herinfo,
@@ -102,6 +114,7 @@
 
   .formrightside {
     height: auto;
+    width: 100% !important;
   }
 
   #orderform button,
@@ -115,6 +128,13 @@
 
   .tosrightside {
     height: auto !important;
+    margin-top: 5rem;
+  }
+
+  #tossection {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 5rem !important;
   }
 
 } 
@@ -135,6 +155,7 @@
     place-items: center;
   }
 
+  
 }
 
 
@@ -145,16 +166,14 @@
     width: 100%;
   }
 
-  .tosleftside {
-    margin-bottom: 9rem;
-  }
 
   .tosrightside {
     height: auto !important;
+    margin-top: 7rem;
   }
 
   #tossection {
-    height: auto;
+    height: auto;    
   }
 
   #idbutton {
@@ -165,6 +184,14 @@
 
   .buttoncontainer button {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 689px) {
+  #tossection {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: .1rem !important;
   }
 }
 
@@ -209,9 +236,38 @@
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 413px) {
   #tossection {
     display: flex;
-    row-gap: 30rem !important;
+    flex-direction: column !important;
+    row-gap: 22rem !important;
+  }
+}
+@media (max-width: 395px) {
+  #tossection {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 27rem !important;
+  }
+}
+@media (max-width: 392px) {
+  #tossection {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 20rem !important;
+  }
+}
+@media (max-width: 376px) {
+  #tossection {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 27rem !important;
+  }
+}
+@media (max-width: 374px) {
+  #tossection {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 32rem !important;
   }
 }
